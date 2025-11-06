@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 
+        'self';
+    frame-src 
+        https://service.force.com;
+    connect-src 
+        https://creaform--uat2025.sandbox.my.site.com/PartnerPortal/embeddedService/sidebarApp.app
+        https://creaform--uat2025.sandbox.my.site.com/PartnerPortal/aura;
+    script-src 
+        'self'
+        'unsafe-eval'
+        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp
+        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com/chat/rest/Visitor/Settings.jsonp
+        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com/chat/rest/Visitor/Availability.jsonp
+        https://creaform--uat2025.sandbox.my.salesforce.com
+        https://creaform--uat2025.sandbox.my.site.com/PartnerPortal/l/
+        https://service.force.com/embeddedservice/5.0/esw.min.js
+        https://service.force.com/embeddedservice/5.0/utils/common.min.js
+        https://service.force.com/embeddedservice/5.0/client/liveagent.esw.min.js
+        https://service.force.com/embeddedservice/5.0/client/invite.esw.min.js
+        https://service.force.com/embeddedservice/5.0/utils/inert.min.js
+        https://static.lightning.force.com;
+    style-src 
+        'self'
+        'unsafe-inline' 
+        https://service.force.com/embeddedservice/5.0/esw.min.css 
+        https://creaform--uat2025.sandbox.my.site.com/PartnerPortal/;
+"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple boilerplate for GitHub Pages">
