@@ -2,40 +2,37 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Security-Policy" content="
-    default-src 
-        'self';
-    frame-src 
-        https://b.static.lightning.force.com
-        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com
-        https://creaform--uat2025.sandbox.my.salesforce.com
-        https://creaform--uat2025.sandbox.my.site.com
-        https://service.force.com/embeddedservice
-        https://static.lightning.force.com;
-    connect-src
-        https://b.static.lightning.force.com
-        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com
-        https://creaform--uat2025.sandbox.my.salesforce.com
-        https://creaform--uat2025.sandbox.my.site.com
-        https://service.force.com/embeddedservice
-        https://static.lightning.force.com;
-    script-src 
-        'self'
-        'unsafe-eval'
-        https://b.static.lightning.force.com
-        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com
-        https://creaform--uat2025.sandbox.my.salesforce.com
-        https://creaform--uat2025.sandbox.my.site.com
-        https://service.force.com/embeddedservice
-        https://static.lightning.force.com;
-    style-src 
-        'self'
-        'unsafe-inline' 
-        https://b.static.lightning.force.com
-        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com
-        https://creaform--uat2025.sandbox.my.salesforce.com
-        https://creaform--uat2025.sandbox.my.site.com
-        https://service.force.com/embeddedservice
-        https://static.lightning.force.com;
+        default-src 'self';
+        script-src
+          'self'
+          'unsafe-eval'
+          https://service.force.com
+          https://*.lightning.force.com
+          https://*.my.salesforce.com
+          https://*.my.site.com
+          https://*.salesforceliveagent.com;
+        script-src-elem
+          'self'
+          'unsafe-eval'
+          https://service.force.com
+          https://*.lightning.force.com
+          https://*.my.salesforce.com
+          https://*.my.site.com
+          https://*.salesforceliveagent.com;
+        connect-src
+          'self'
+          https://*.salesforceliveagent.com
+          https://*.force.com
+          https://*.my.salesforce.com
+          https://*.my.site.com;
+        style-src 'self' https://*.force.com https://*.salesforce.com 'unsafe-inline';
+        img-src 'self' data: https://*.force.com https://*.salesforce.com;
+        font-src 'self' https://*.force.com https://*.salesforce.com data:;
+        frame-src 'self' https://*.force.com https://*.salesforce.com https://*.my.site.com;
+        worker-src 'self' blob:;
+        base-uri 'self';
+        form-action 'self';
+        frame-ancestors 'none'
 "/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
