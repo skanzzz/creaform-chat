@@ -1,4 +1,6 @@
-var initESW = function(gslbBaseURL) {
+loadChatBot();
+function loadChatBot(){
+    var initESW = function(gslbBaseURL) {
         embedded_svc.settings.extraPrechatFormDetails = [{
             "label":"First Name",
             "transcriptFields": ["FirstName__c"]
@@ -86,6 +88,8 @@ var initESW = function(gslbBaseURL) {
     } else {
         initESW('https://service.force.com');
     }
+}
+
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
