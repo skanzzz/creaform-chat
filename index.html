@@ -5,9 +5,19 @@
     default-src 
         'self';
     frame-src 
-        https://service.force.com;
-    connect-src
+        https://b.static.lightning.force.com
+        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com
+        https://creaform--uat2025.sandbox.my.salesforce.com
         https://creaform--uat2025.sandbox.my.site.com
+        https://service.force.com/embeddedservice
+        https://static.lightning.force.com;
+    connect-src
+        https://b.static.lightning.force.com
+        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com
+        https://creaform--uat2025.sandbox.my.salesforce.com
+        https://creaform--uat2025.sandbox.my.site.com
+        https://service.force.com/embeddedservice
+        https://static.lightning.force.com;
     script-src 
         'self'
         'unsafe-eval'
@@ -20,8 +30,12 @@
     style-src 
         'self'
         'unsafe-inline' 
-        https://service.force.com/embeddedservice 
-        https://creaform--uat2025.sandbox.my.site.com;
+        https://b.static.lightning.force.com
+        https://d.la12s-core1.sfdc-58ktaz.salesforceliveagent.com
+        https://creaform--uat2025.sandbox.my.salesforce.com
+        https://creaform--uat2025.sandbox.my.site.com
+        https://service.force.com/embeddedservice
+        https://static.lightning.force.com;
 "/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
